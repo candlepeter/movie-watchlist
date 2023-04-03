@@ -1,0 +1,35 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./index.css">
+        
+        <!-- font awsome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- google fonts cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h2>Find your film</h2>
+                <a href="./watchlist/watchlist.html">My Watchlist</a>
+            </header>
+            <main>
+                <form id="form">
+                    <span><i class="fa-regular fa-magnifying-glass"></i></span>
+                    <input type="text" name="search" placeholder="Search for a movie" required>
+                    <button type="submit">Search</button>
+                </form>
+                <div id="display-search-result-el" class="display-search-result-el">
+                    <div class="empty-search">
+                        <span class="film-icon"><i class="fa-regular fa-film"></i></span>
+                        <p>Start exploring</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
